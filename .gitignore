@@ -23,10 +23,3 @@ results/
 *.ckpt
 *.xlsx
 *.zip
-
-# Large/raw local datasets. Keep only small public samples if explicitly intended.
-data/raw_data/
-
-# Dataset row triggers GitHub secret scanning; keep this source file local.
-data/raw_data/fakenews/no_images/gossipcop/gossipcop_test.csv
-data/raw_data/fakenews/linshi/gossipcop_test.csv

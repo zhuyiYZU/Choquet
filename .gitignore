@@ -1,0 +1,32 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE/local machine files
+.idea/
+.vscode/
+
+# Experiment outputs and model/cache artifacts
+outputs/
+results/
+*.pt
+*.pth
+*.ckpt
+*.xlsx
+*.zip
+
+# Large/raw local datasets. Keep only small public samples if explicitly intended.
+data/raw_data/
+
+# Dataset row triggers GitHub secret scanning; keep this source file local.
+data/raw_data/fakenews/no_images/gossipcop/gossipcop_test.csv
+data/raw_data/fakenews/linshi/gossipcop_test.csv
